@@ -1,0 +1,48 @@
+.hero-section {
+  height: 100vh;
+}
+
+.navbar {
+  z-index: 2;
+  transition: all 1s;
+}
+
+.hero-content {
+  position: absolute;
+  top: 200px;
+}
+
+::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+.sidebar {
+  top: 70px;
+  z-index: 1;
+  width: 100%;
+  padding: 0 20px;
+  transition: all 0.3s;
+  height: 100vh;
+  opacity: 0;
+  left: -100%;
+}
+
+.sidebar * {
+  margin: 10px 0;
+}
+
+@media (max-width: 578px) {
+  .sidebar {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 578px) {
+  .sidebar {
+    height: 100px;
+  }
+
+  .hero-section img {
+    width: 100%;
+  }
+}
