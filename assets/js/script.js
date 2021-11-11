@@ -11,7 +11,6 @@ window.onscroll = () => {
   if (window.scrollY > 100) {
     navbar.classList.add('bg-black');
     navbar.classList.add('shadow-md');
-    bars.classList.add('text-blue-800');
     // navbarBrand.classList.remove("text-white");
     // navbarBrand.classList.add("text-blue-800");
     // navbarLink.forEach((el) => {
@@ -23,7 +22,6 @@ window.onscroll = () => {
   } else {
     navbar.classList.remove('bg-black');
     navbar.classList.remove('shadow-md');
-    bars.classList.remove('text-blue-800');
     // navbarBrand.classList.add("text-white");
     // navbarBrand.classList.remove("text-blue-800");
     // navbarLink.forEach((el) => {
