@@ -17,17 +17,15 @@
 }
 
 .sidebar {
-  top: 0;
+  top: -200vh;
   z-index: 1;
-  width: 100%;
-  padding: 0 20px;
   transition: all 0.3s;
   opacity: 1;
   left: 0;
+  right: 0;
 }
-
-.sidebar * {
-  margin: 10px 0;
+.sidebar.active {
+  top: 0;
 }
 
 @media (max-width: 578px) {
