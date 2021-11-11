@@ -33,28 +33,18 @@ window.onscroll = () => {
     // });
   }
 };
+// if(click == 1){
+//   if (sidebar.style.top == "-100%") {
+//     sidebar.style.top = "0";
+//     sidebar.style.opacity = "1";
+//   } else {
+//     sidebar.style.left = "-100%";
+//     sidebar.style.opacity = "0";
+//   }
+//   click = 2;
+// }
+// $('.slick-1').slick();
 
-var click = 1;
-function showMenu() {
-  if(click == 1){
-    if (sidebar.style.left == "-100%") {
-      sidebar.style.left = "0";
-      sidebar.style.opacity = "1";
-    } else {
-      sidebar.style.left = "-100%";
-      sidebar.style.opacity = "0";
-    }
-    click = 2;
-  }
-  // sidebar.classList.add('left-0')
-  if (sidebar.style.left == "-100%") {
-    sidebar.style.left = "0";
-    sidebar.style.opacity = "1";
-  } else {
-    sidebar.style.left = "-100%";
-    sidebar.style.opacity = "0";
-  }
+function showMenu(){
+  // 
 }
-
-$('.slick-1').slick();
-  
