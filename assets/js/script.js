@@ -52,5 +52,3 @@ bars.addEventListener('click', () => {
     barsIcon.classList.replace('fa-times', 'fa-bars');
   }
 });
-
-function showMenu() {}

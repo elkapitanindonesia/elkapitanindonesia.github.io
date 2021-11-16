@@ -31,7 +31,7 @@
   </style>
 </head>
 
-<body class="bg-black">
+<body class="bg-black" id="bisnis">
   <nav class="py-5 navbar fixed w-full">
     <div class="container mx-auto w-full flex justify-between items-center px-4">
       <h6 class="text-2xl text-white navbar-brand z-10">XXX</h6>
@@ -130,7 +130,7 @@
     </div>
   </div>
   <div class="container px-3 mx-auto">
-    <img src="assets/img/B2.gif" class="w-full img-gif" alt="" style="height: 500px;">
+    <img src="assets/img/B.gif" data-slide="1" class="w-full img-gif" alt="" style="height: 500px;">
     <img src="assets/img/segitiga.svg" style="height: 500px; margin-top: -500px;">
     <div class="container mx-auto">
       <div class="text-white px-3" style="margin-top: -300px; font-family: arial;">
@@ -175,8 +175,10 @@
     </div>
 
     <div class="">
-      <div class="bg-blue-300" style="height: 600px;"></div>
-      <div style="background-color: rgba(0, 0, 0, 0.6); margin-top: -600px; height: 600px;" class="w-1/2 flex items-center">
+      <div class="bg-blue-300" style="height: 600px;">
+        <img src="assets/img/1.jpg" alt="" class="w-full h-full">
+      </div>
+      <div style="background-color: rgba(0, 0, 0, 0.6); margin-top: -600px; height: 600px;" class="w-1/2 flex items-center absolute left-0">
         <div class="w-2/3 mx-auto">
           <h5 class="mb-3 text-7xl font-medium">Mitigasi <br> Risiko</h5>
           <div class="pl-10">
@@ -214,8 +216,10 @@
     </div>
 
     <div class="">
-      <div class="bg-blue-300" style="height: 600px;"></div>
-      <div style="background-color: rgba(0, 0, 0, 0.6); margin-top: -600px; height: 600px;" class="w-1/2 ml-auto flex items-center">
+      <div class="bg-blue-300" style="height: 600px;">
+        <img src="assets/img/2.jpg" class="w-full h-full" alt="">
+      </div>
+      <div style="background-color: rgba(0, 0, 0, 0.6); margin-top: -600px; height: 600px;" class="w-1/2 ml-auto flex items-center absolute right-0">
         <div class="w-2/3 mx-auto pt-10">
           <h5 class="mb-3 text-7xl font-medium">Teknologi</h5>
           <div class="pl-10">
@@ -346,6 +350,25 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="assets/js/script.js"></script>
+  <script>
+
+    function changeImg () {
+      const imgGif = document.querySelector('.img-gif');
+      if(imgGif.getAttribute('data-slide') == '1'){
+        imgGif.setAttribute('data-slide', '2');
+        imgGif.setAttribute('src', 'assets/img/B.gif');
+      } else if(imgGif.getAttribute('data-slide') == '2'){
+        imgGif.setAttribute('data-slide', '1');
+        imgGif.setAttribute('src', 'assets/img/B2.gif');
+      }
+
+      console.log('Hello world')
+
+      setTimeout(() => changeImg(), 5000);
+    }
+
+    changeImg();
+  </script>
 </body>
 
 </html>
