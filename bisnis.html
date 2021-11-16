@@ -130,7 +130,7 @@
     </div>
   </div>
   <div class="container px-3 mx-auto">
-    <img src="assets/img/B.gif" data-slide="1" class="w-full img-gif" alt="" style="height: 500px;">
+    <img src="assets/img/1.gif" data-slide="1" class="w-full img-gif" alt="" style="height: 500px;">
     <img src="assets/img/segitiga.svg" style="height: 500px; margin-top: -500px;">
     <div class="container mx-auto">
       <div class="text-white px-3" style="margin-top: -300px; font-family: arial;">
@@ -356,10 +356,19 @@
       const imgGif = document.querySelector('.img-gif');
       if(imgGif.getAttribute('data-slide') == '1'){
         imgGif.setAttribute('data-slide', '2');
-        imgGif.setAttribute('src', 'assets/img/B.gif');
+        imgGif.setAttribute('src', 'assets/img/1.gif');
       } else if(imgGif.getAttribute('data-slide') == '2'){
+        imgGif.setAttribute('data-slide', '3');
+        imgGif.setAttribute('src', 'assets/img/2.gif');
+      } else if(imgGif.getAttribute('data-slide') == '3'){
+        imgGif.setAttribute('data-slide', '4');
+        imgGif.setAttribute('src', 'assets/img/3.gif');
+      }else if(imgGif.getAttribute('data-slide') == '4'){
+        imgGif.setAttribute('data-slide', '5');
+        imgGif.setAttribute('src', 'assets/img/4.gif');
+      } else if(imgGif.getAttribute('data-slide') == '5'){
         imgGif.setAttribute('data-slide', '1');
-        imgGif.setAttribute('src', 'assets/img/B2.gif');
+        imgGif.setAttribute('src', 'assets/img/5.gif');
       }
 
       console.log('Hello world')
