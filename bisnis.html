@@ -28,6 +28,31 @@
     body {
       font-family: "BAHNSCHRIFT";
     }
+
+    .segitiga {
+      height: 500px;
+    }
+
+    .segitiga-teks {
+      /* margin-top: -200px;
+      position: absolute;
+      z-index: 3;
+      left: 0; */
+    }
+
+    @media(min-width: 768px){
+
+      .segitiga {
+        margin-top: -500px;
+      }
+    }
+
+    @media(max-width: 768px){
+      .segitiga {
+        /* height: 600px; */
+        margin-top: -430px;
+      }
+    }
   </style>
 </head>
 
@@ -129,14 +154,14 @@
     <a href="#intro" class="border-2 border-white px-5 py-3 text-white hover:bg-white hover:text-gray-800">Selanjutnya</a>
     </div>
   </div>
-  <div class="container px-3 mx-auto">
+  <div class="container px-3 mx-auto" style="overflow: hidden; height: 500px;">
     <img src="assets/img/1.gif" data-slide="1" class="w-full img-gif" alt="" style="height: 500px;">
-    <img src="assets/img/segitiga.svg" style="height: 500px; margin-top: -500px;">
+    <img src="assets/img/segitiga.svg" class="segitiga">
     <div class="container mx-auto">
       <div class="text-white px-3" style="font-family: arial;">
         <!-- <h1 style="font-size: 10vw;">"</h1> -->
-        <h5 class="text-5xl pl-10" style="margin-top: -200px;">We bring <br> sciences to <br> finance world.</h5>
-      </div>
+        <h5 class="text-5xl pl-10" class="segitiga-teks" style="margin-top: -250px;">We bring <br> sciences to <br> finance world.</h5>
+      </div> 
     </div>
   </div>
 
@@ -159,7 +184,7 @@
 
     <div id="alinea3" class="pt-10">
       <div style="background-color: #202020;" class="py-20">
-        <div class="grid grid-cols-3 container mx-auto lg:w-2/3 px-3">
+        <div class="grid md:grid-cols-3 container mx-auto lg:w-2/3 px-3 gap-20">
           <div class="text-center">
             <div class="text-2xl">11 +</div> 
             <div class="text-2xl">Proprietary Strategies</div>
@@ -179,7 +204,7 @@
         <div class="bg-blue-300" style="height: 600px;">
           <img src="assets/img/1.jpg" alt="" class="w-full h-full">
         </div>
-        <div style="background-color: rgba(0, 0, 0, 0.6); margin-top: -600px; height: 600px;" class="w-1/2 flex items-center absolute left-0">
+        <div style="background-color: rgba(0, 0, 0, 0.6); margin-top: -600px; height: 600px;" class="lg:w-1/2 flex items-center absolute left-0">
           <div class="w-2/3 mx-auto">
             <h5 class="mb-3 text-7xl font-medium">Mitigasi <br> Risiko</h5>
             <div class="pl-10">
@@ -206,7 +231,7 @@
 
     <div id="alinea4" class="">
       <div style="background-color: #202020;" class="py-20">
-        <div class="grid grid-cols-2 container mx-auto lg:w-2/3 px-3">
+        <div class="grid md:grid-cols-2 container mx-auto lg:w-2/3 px-3 gap-20">
           <div class="text-center">
             <div class="text-2xl">6</div> 
             <div class="text-2xl">Types of Instruments</div>
@@ -221,7 +246,7 @@
         <div class="bg-blue-300" style="height: 600px;">
           <img src="assets/img/2.jpg" class="w-full h-full" alt="">
         </div>
-        <div style="background-color: rgba(0, 0, 0, 0.6); margin-top: -600px; height: 600px;" class="w-1/2 ml-auto flex items-center absolute right-0">
+        <div style="background-color: rgba(0, 0, 0, 0.6); margin-top: -600px; height: 600px;" class="lg:w-1/2 ml-auto flex items-center absolute right-0">
           <div class="w-2/3 mx-auto pt-10">
             <h5 class="mb-3 text-7xl font-medium">Teknologi</h5>
             <div class="pl-10">

@@ -28,6 +28,16 @@
     body {
       font-family: "BAHNSCHRIFT";
     }
+
+    #quantAcademy {
+      margin-top: 300px;
+    }
+
+    @media (max-width: 578px){
+      #quantAcademy {
+        margin-top: 0px;
+      }
+    }
   </style>
 </head>
 
@@ -121,7 +131,9 @@
     </nav>
 
     <div class="hero-section">
-      <img src="assets/img/portofolio/gif.gif" alt="" class="w-full h-screen">
+      <div class="h-screen w-full overflow-hidden">
+        <img src="assets/img/portofolio/gif.gif" alt="" class="lg:w-full h-screen" style="min-width: 900px;">
+      </div>
       <div class="flex items-center w-full h-screen absolute left-0 top-0" style="background: rgb(0, 0, 0, .3);">
         <div class="container px-3 mx-auto">
           <h1 class="text-6xl text-white">Ghost Pattern <br >Fund</h1>
@@ -138,7 +150,7 @@
       <!-- </div> -->
       <img src="assets/img/portofolio/1.jpg" alt="" class="h-full ml-auto" style="width: 700px; height: 400px;" id="ghostPatternFund">
       <div style="margin-top: 0; background: linear-gradient(black, #202020);" class="pb-5">
-        <div style="margin-top: -0px;" class="container lg:md-2/3 mx-auto">
+        <div style="margin-top: -0px;" class="container lg:md-2/3 mx-auto px-5 lg:px-0">
           <h1 class="text-4xl text-white">Ghost Pattern Fund</h1>
           <h5 class="text-xl text-white w-2/3 mt-5">
             Ghost Pattern Fund dikelola pada induk instumen saham dengan
@@ -154,9 +166,9 @@
       <div class="overflow-hidden">
         <div style="background:#202020; height: 600px; transform: rotate(-10deg) translateY(-580px); width: 200vw;"></div>
       </div>
-      <div class="container mx-auto px-3" style="padding-top: -300px;" id="gridSection">
-        <div class="grid grid-cols-3 gap-10">
-          <div style="margin-top: 300px;" id="quantAcademy">
+      <div class="container mx-auto px-7" style="padding-top: -300px;" id="gridSection">
+        <div class="grid lg:grid-cols-3 gap-10">
+          <div id="quantAcademy">
             <img src="assets/img/portofolio/kiri.jpg" class="w-full">
             <div class="mt-5">
               <h1 class="text-4xl text-white mb-10">Quant Academy</h1>
